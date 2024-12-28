@@ -19,7 +19,7 @@ var myObject = { name: "Ahmed", age: 22, married: false, children: ["taha", "gul
 var _value = ""
 
 
-// alert(undefined)
+// alert(undefined) // undefine is an argument here
 // console.log(true)
 // console.log("first")
 // console.log(newValue)
@@ -27,14 +27,14 @@ var _value = ""
 // console.log(newValue)
 // console.log("second")
 // var newValue; // decelare
-
-// newValue = "assign";
+// newValue = "assign"; //assignment
 // console.log(newValue)
 
 
 
-// var firstName = "Abdulla'h"
-// var firstName2 = 'Abdulla"h'
+var firstName = "Abdulla'h"
+var firstName2 = 'Abdulla"h'
+
 
 // console.log(typeof firstName)
 
@@ -83,13 +83,13 @@ var secondNum = 10
 // console.log(result)
 
 
-// var a = 1 + 1
-// var b = "one" + "one"
+var a = 1 + 1
+var b = "one" + "one"
 // console.clear()
 // console.log(a, b)
 
 // console.clear()
-// var a = 2 - "1"
+// var a = "1" - 2 
 // console.log(a)
 // var age = 26
 // var userAge = prompt("Enter Your Age","26")
@@ -103,11 +103,19 @@ var secondNum = 10
 // var a = 1
 // var b = 2
 
-// console.log(a != b)
-// console.log(a > b)
-// console.log(a < b)
-// console.log(a <= b)
-// console.log(a >= b)
+console.log(a === b)
+console.log(a > b)
+console.log(a < b)
+console.log(a <= b)
+console.log(a >= b)
+
+var mySalary = 50000
+var newSalary = "50000"
+//  data, value
+
+// console.log(newSalary !== mySalary, "salary")
+
+// var result = a > b
 
 // var role = prompt("Enter your role")
 
@@ -125,3 +133,252 @@ var secondNum = 10
 
 
 
+
+var result = false
+if (result) {
+    console.log("running")
+} else {
+    console.log("running in else")
+}
+
+// if // keyword
+// () // dataTypeBoolen
+// {} // run if return is True
+
+
+
+
+
+// var a = 6
+// var condition = true
+// // console.log(condition, "===condition")
+
+// if (true) {
+//     console.log("Value of a = 5")
+// } else {
+//     console.log("Value of a != 5")
+// }
+
+
+// var dahiHai = true
+// var doodhHai = true
+// var andeHai = true
+// var malaiWaliDahi = false
+
+// if (dahiHai) {
+//     if (malaiWaliDahi) {
+//         console.log("Dahi le ao")
+//     } else {
+//         console.log("Khali hath ajao")
+//     }
+// } else if (doodhHai) {
+//     console.log("Doodh le ao")
+// } else if (andeHai) {
+//     console.log("ande le ao")
+// } else {
+//     console.log("Khali hath ajao")
+// }
+
+
+// console.clear()
+
+// var age = prompt("Enter Your Age")
+// if (age >= 20) {
+//     var isMarried = prompt("Aap shadi shuda hai")
+//     if (isMarried === "yes") {
+//         var isChildren = prompt("Apke bache hai")
+//         if (isChildren === "yes") {
+//             console.log("shadi na krein")
+//         } else {
+//             console.log("aik aur krlein")
+//         }
+//     } else {
+//         console.log("Shadi krlein")
+//     }
+// } else {
+//     console.log("Shadi na krein")
+// }
+
+
+
+
+// var classes = prompt("Enter your classes")
+// var gender = prompt("Enter your Gender")
+
+
+// if (classes >= 10) {
+//     if (gender === "male") {
+//         console.log("You are eligible for course")
+//     } else {
+//         console.log("You are not eligible for course")
+//     }
+// } else {
+//     console.log("You are not eligible for course")
+// }
+
+// if (classes >= 10 && gender === "male") {
+//     console.log("You are eligible for course")
+// } else {
+//     console.log("You are not eligible for course")
+// }
+
+// var matricMarks = prompt("Enter Your Matric Marks")
+// var entryTestMarks = prompt("Enter Your Enter-Test Marks")
+
+// if (matricMarks >= 70 || entryTestMarks >= 70) {
+//     console.log("You are eligible for course")
+// } else {
+//     console.log("You are not eligible for course")
+// }
+
+
+console.clear()
+
+var students = ["qurban", "adeel"];
+// console.log(students)
+// console.log(students.length)
+
+// console.log(students[2])
+students.push("huzaifa")
+
+// console.log(students.length)
+// console.log(students, students[2])
+
+students.unshift("fareed")
+// console.log(students, students[3])
+// console.log(students.length)
+
+students.pop()
+console.log(students)
+
+students.shift()
+console.log(students)
+
+students.shift()
+console.log(students)
+
+console.clear()
+
+
+// var students = []
+
+// var student1 = prompt("Enter Student Id")
+// students.unshift(student1)
+
+// var student2 = prompt("Enter Student Id")
+// students.unshift(student2)
+
+// var student3 = prompt("Enter Student Id")
+// students.unshift(student3)
+
+// var student4 = prompt("Enter Student Id")
+// students.unshift(student4)
+
+// var student5 = prompt("Enter Student Id")
+// students.unshift(student5)
+
+// var student6 = prompt("Enter Student Id")
+// students.unshift(student6)
+
+// students[1] = "newly"
+
+
+// console.log(students[1])
+
+var newArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// var slicedArr = newArray.slice(1, 9)
+// console.log(newArray, slicedArr)
+// var slicedArr = newArray.slice(1, 6)
+// console.log(newArray, slicedArr)
+
+newArray.splice(1, 0, "one", "two", 2.5)
+console.log(newArray)
+
+
+console.clear()
+
+for (var i = 0; i < 10; i += 2) {
+    var num = i * 2
+    console.log(i, num, "===loop")
+}
+
+for (var i = 10; i > 0; i -= 2) {
+    console.log(i, "===loop 2")
+}
+var tableNumber = 2
+for (var i = 1; i <= 10; i++) {
+    var resultOfTable = i * tableNumber
+    console.log("2 X", i, "=", resultOfTable)
+}
+
+// console.clear()
+// var result = prompt("Enter your age")
+// console.log(-result, typeof -result)
+// var resultInNum = parseInt(result)
+// var resultInNum = parseFloat(result)
+// var resultInNum = Number(result)
+
+// console.log(result, resultInNum, typeof resultInNum)
+
+console.clear()
+var students = ["nasir", "ahmed", "fareed", "bilal", "hassan", "yasir", "talha"]
+// var iteration = 0
+// console.log(students[iteration])
+
+// iteration++
+// console.log(students[iteration])
+
+// iteration++
+// console.log(students[iteration])
+
+// iteration++
+// console.log(students[iteration])
+
+// console.log(students[2])
+// console.log(students[3])
+// console.log(students[4])
+
+// for (var i = 0; i < students.length; i++) {
+//     console.log(students[i])
+// }
+
+
+
+// var numbers = [5, 4, 5, 9, 1,0, 5, 6, 1, 7, 3,4]
+
+// for(var i = 0 ; i < numbers.length ; i++){
+
+//     if(numbers[i] == 0){
+//         console.log(i," = index found");
+//         break;
+//     }
+//     console.log(numbers[i]);
+
+// }
+
+var shops = ["gulkhan", "Allah wali", "jawed nihari", "nagori", "motiwala", "msuleman"]
+var pocketMoney = 0;
+for (var i = 0; i < shops.length; i++) {
+    if (shops[i] == "jawed nihari") {
+        continue;
+    }
+    pocketMoney += 50;
+}
+
+console.log(pocketMoney, "===pocket money");
+console.clear()
+for (var i = 0; i < 5; i++) {
+    console.log("outer", i)
+    for (var j = 0; j < 3; j++) {
+        console.log("inner", "j:", j, "i:", i);
+    }
+
+}
+
+
+var isMarried = prompt("Enter Yes Or No")
+// var isMarriedInLower = isMarried.toLowerCase()
+var isMarriedInLower = isMarried.toUpperCase()
+if (isMarriedInLower === "YES") {
+    console.log(isMarried, isMarriedInLower, "Welcome ")
+}
