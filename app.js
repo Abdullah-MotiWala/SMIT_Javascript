@@ -83,7 +83,7 @@ var secondNum = 10
 // console.log(result)
 
 
-var a = 1 + 1
+// var a = 1 + 1
 var b = "one" + "one"
 // console.clear()
 // console.log(a, b)
@@ -103,11 +103,11 @@ var b = "one" + "one"
 // var a = 1
 // var b = 2
 
-console.log(a === b)
-console.log(a > b)
-console.log(a < b)
-console.log(a <= b)
-console.log(a >= b)
+// console.log(a === b)
+// console.log(a > b)
+// console.log(a < b)
+// console.log(a <= b)
+// console.log(a >= b)
 
 var mySalary = 50000
 var newSalary = "50000"
@@ -376,9 +376,67 @@ for (var i = 0; i < 5; i++) {
 }
 
 
-var isMarried = prompt("Enter Yes Or No")
+// var isMarried = prompt("Enter Yes Or No")
 // var isMarriedInLower = isMarried.toLowerCase()
-var isMarriedInLower = isMarried.toUpperCase()
-if (isMarriedInLower === "YES") {
-    console.log(isMarried, isMarriedInLower, "Welcome ")
-}
+// var isMarriedInLower = isMarried.toUpperCase()
+// if (isMarriedInLower === "yes") {
+//     console.log(isMarried, isMarriedInLower, "Welcome ")
+// }
+// console.clear()
+// var answer = "hElLo"
+// console.log(answer, answer.toLowerCase())
+// console.log(answer, answer.toUpperCase())
+
+
+console.clear()
+// var a = 1
+// var a = 2
+// let a = 1
+// a = 2
+// const a = 1
+// a = 2
+
+// var : re-declare, re-assign
+// let : not re-declare, re-assign
+// const : not re-declare, not re-assign
+
+// console.log(a)
+
+let country = "Pakaiasnadfgatan"
+console.log(country.slice(0, 3))
+console.log(country.length, "===length")
+console.log(country[0], "===letter")
+console.log(country.charAt(0), "===charAt")
+console.log(country.indexOf("z"), "===index")
+console.log(country.lastIndexOf("a"), "===index")
+
+// last char of string
+const lastIndex = country.length - 1
+const lastElement = country.charAt(lastIndex)
+console.clear()
+console.log(lastElement)
+country = country.replace("P", "I")
+console.log(country)
+
+country = country.replace("a", "b")
+console.log(country)
+
+country = country.replaceAll("a", "c")
+console.log(country)
+
+country = country.replaceAll("i", "j")
+console.log(country)
+
+const bill = 12.9999999
+// const roundedBill = Math.round(bill)
+const ceiledBill = Math.ceil(bill)
+const flooredBill = Math.floor(bill)
+console.log(bill, flooredBill)
+const randomNumber = Math.random()
+const ourNumber = randomNumber * 100
+// console.log(Math.floor(ourNumber),randomNumber.toFixed(2))
+console.log(randomNumber, randomNumber.toFixed(2))
+
+const date = new Date()
+document.write(date)
+console.log(date, "===date")

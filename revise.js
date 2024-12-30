@@ -18,3 +18,17 @@ c.splice(2, 0, "jawed_nihari")
 console.log(c);
 var fruit = c.slice(1, 15);
 console.log(fruit, c);
+
+// let a = 20 
+// var arry = []
+// for(var i = 0 ;i < 10 ; i++ ){
+//     console.log(i)
+// }
+// alert("HELLO")
+
+
+
+var arry = ["sami" , "irfan" , "rizwan" ,"abdullah"]
+for (var i = 0; i < arry.length; i++) {
+   console.log(arry[i])
+}
