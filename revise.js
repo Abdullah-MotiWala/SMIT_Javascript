@@ -1,7 +1,7 @@
-var a = prompt("enter the number");
-if (a == 10) {
-    alert("hello world");
-}
+// var a = prompt("enter the number");
+// if (a == 10) {
+//     alert("hello world");
+// }
 var a = 25
 var b = "enter your number"
 var c = ["one", 2, "three", "four"];
@@ -28,7 +28,48 @@ console.log(fruit, c);
 
 
 
-var arry = ["sami" , "irfan" , "rizwan" ,"abdullah"]
+var arry = ["sami", "irfan", "rizwan", "abdullah"]
 for (var i = 0; i < arry.length; i++) {
-   console.log(arry[i])
+    console.log(arry[i])
 }
+
+
+// slice, charAt, indexOf, lastIndexOf, replace, replaceAll
+// Math .random, .ceil, .floor, .round
+
+let city = "Afghanistan"
+
+console.log(city.slice(0, 3))
+console.log(city.charAt(5))
+console.log(city[6]);
+console.log(city.indexOf("s"));
+console.log(city.lastIndexOf("a"));
+console.log(city.replace("A", "P"));
+console.log(city.replaceAll("a", "t"));
+
+let number = 15.6666
+newNumber = Math.round(number);
+console.log(newNumber);
+
+newNumber1 = Math.ceil(number);
+console.log(newNumber1)
+
+newNumber2 = Math.floor(number);
+console.log(newNumber2);
+
+let random = Math.random();
+// console.log(random.toFixed(2))
+console.clear()
+// console.log(random);
+
+// let highest = Math.random() * 10
+// let lowest = 0.0000000000000001 * 2
+// console.log(Math.round(highest))
+// console.log(lowest)
+
+
+
+
+
+
+

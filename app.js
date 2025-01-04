@@ -437,6 +437,39 @@ const ourNumber = randomNumber * 100
 // console.log(Math.floor(ourNumber),randomNumber.toFixed(2))
 console.log(randomNumber, randomNumber.toFixed(2))
 
+// const date = new Date()
+// document.write(date)
+// console.log(date, "===date")
+
+
+
 const date = new Date()
-document.write(date)
-console.log(date, "===date")
+// console.log(Date.now())
+
+// console.clear()
+// console.log(date,"===date")
+// console.log(date.getDay(),"===day")
+// console.log(date.getMonth(),"===month")
+// console.log(date.getDate(),"===date")
+// console.log(date.getFullYear(),"===Year")
+// console.log(date.getHours(),"===Hours")
+// console.log(date.getMinutes(),"===minutes")
+// console.log(date.getSeconds(),"===seconds")
+// console.log(date.getMilliseconds(),"===miliseconds")
+// console.log(date.getTime(),"===miliseconds")
+// console.log(date.getDate(),"===miliseconds")
+// console.log(date.toDateString(),"===miliseconds")
+// console.log(date.toTimeString(),"===miliseconds")
+// console.log(date.toString(),"===miliseconds")
+// console.log(Date.now(),"date")
+console.clear()
+
+// const newDate = new Date("June 30, 2035")
+// const currentDate = new Date()
+// console.log(parseInt((newDate.getTime() - currentDate.getTime()) / 1000 / 60 / 60 / 24), "===newDate")
+
+const newDate = new Date()
+newDate.setFullYear(2029)
+newDate.setMonth(2)
+newDate.setDate(1)
+console.log(newDate)
