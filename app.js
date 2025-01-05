@@ -468,8 +468,69 @@ console.clear()
 // const currentDate = new Date()
 // console.log(parseInt((newDate.getTime() - currentDate.getTime()) / 1000 / 60 / 60 / 24), "===newDate")
 
-const newDate = new Date()
-newDate.setFullYear(2029)
-newDate.setMonth(2)
-newDate.setDate(1)
-console.log(newDate)
+// const newDate = new Date()
+// newDate.setFullYear(2029)
+// newDate.setMonth(2)
+// newDate.setDate(1)
+// console.log(newDate)
+
+// const myObj = {
+//     name: "Bilal",
+//     age: 24,
+//     gender: "male",
+// }
+// console.log(myObj)
+// console.log(myObj.name)
+// console.log(myObj["name"])
+// console.log(myObj.age)
+// console.log(myObj.gender)
+
+
+// function greet() {
+//     let num1 = 0
+//     // const name = prompt("Enter Your Name")
+//     // const greet = "Welcome " + name
+//     // console.log(greet)
+//     num1++
+//     console.log(num1)
+// }
+
+// greet()
+// greet()
+// greet()
+// greet()
+
+const consoles = {
+    log: function () {
+        console.log("Hi")
+    }
+}
+
+// consoles.log()
+
+// function fareed(firstNum, secondNum) {
+//     const result = firstNum * secondNum
+//     // console.log(result)
+//     // return result
+//     console.log(result)
+// }
+// const one = 1
+// const sumResult = fareed(one, 3)
+// const sumResult1 = fareed(5, 9)
+// const sum3 = fareed(0, 0)
+// console.log(sumResult, sumResult1, sum3, "===result")
+
+// const myArr = [0, 1, 2, 4, 6]
+// const returned = myArr.pop()
+// const newReturned = myArr.push(8)
+// const consoleLog = console.log(
+//     "abc"
+// )
+// console.log(myArr, returned, newReturned, consoleLog)
+
+// // const myFunc = function () { }
+// IIFE
+// (function(){
+//     console.log("run");
+// })()
+

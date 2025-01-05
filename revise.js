@@ -67,6 +67,29 @@ console.clear()
 // console.log(Math.round(highest))
 // console.log(lowest)
 
+let date = new Date();
+console.log(typeof date.toTimeString());
+console.log(date.getDay());
+console.log(date.getDate());
+console.log(date.getMonth());
+console.log(date.getFullYear());
+console.log(date.getMilliseconds());
+console.log(date.getSeconds());
+console.log(date.getMinutes());
+console.log(date.getHours());
+
+const bdDate = new Date("6 Dec 2025");
+bdDate.setFullYear("2026");
+bdDate.setMonth("");
+
+console.log(bdDate)
+
+
+
+// console.log(date.getHours());
+// console.log(date.getMilliseconds());
+
+// console.log(typeof date);
 
 
 
