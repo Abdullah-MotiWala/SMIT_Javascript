@@ -588,7 +588,7 @@ const consoles = {
 //     if (bScope === 1) {
 //         var b = 5
 //     }
-//     console.log(b) 
+//     console.log(b)
 // }
 // fooScope()
 // console.log(a);
@@ -658,4 +658,25 @@ const consoles = {
 //     condition = false
 // }
 
-do { console.log("run in do while") } while (false)
+// do { console.log("run in do while") } while (false)
+
+
+// function showName() {
+//     alert("Hi, What's your name")
+// }
+
+// splice(index,numberOfElements,...insertElement)
+
+// arr = [0,1,2,3,4]
+// for (let i = 0; i< 2;i++){
+//     arry.pop()
+// }
+
+// const pakElement = document.getElementById('pak')
+// console.log(pakElement.innerHTML)
+
+// pakElement.innerHTML = "India"
+// pakElement.style.backgroundColor = "red"
+// pakElement.style.display = "none"
+// const myObj = {a:1}
+// myObj.a  = 2

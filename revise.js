@@ -92,6 +92,69 @@ console.log(bdDate)
 // console.log(typeof date);
 
 
+// scope
+// block-scope vs function scope
+// while loop
+// do-while loop
+// swith case
+const studentMarks = 30
+switch (studentMarks) {
+    case 50:
+        console.log("fail")
+        break
+    case 70:
+        console.log("promoted")
+        break
+    case 100:
+        console.log("top")
+        break
+    default:
+        console.log("not eligible")
+}
+
+let age = 24;
+// console.log(age);
+
+function Name() {
+    // let age = 24;
+    // console.log(age);
+    // console.log(age);
+    let sum = 20;
+    console.log(sum);
+    if (true) {
+        var One = "farerd";
+    }
+    console.log(One);
+
+}
+Name();
+// console.log(sum, "fareed");
+
+// let f = 1;
+// let ii = 0;
+// do{
+//     console.log(ii);
+//     ii++; 
+// }while(ii < 10)
+
+// while (f < 10) {
+//     console.log(f);
+//     f++; 
+// }
+
+
+// let allCollected = false
+
+// let currentNumber = 1
+// let sum = 0
+
+// while (allCollected === false) {
+//     currentNumber++
+//     const isPrimeNumber = false
+//     if(isPrimeNumber) sum += currentNumber
+//     // Find out and add prime number
+//     if (sum >= 100) allCollected = true
+// }
 
 
 
