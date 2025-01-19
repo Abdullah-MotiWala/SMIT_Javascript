@@ -680,3 +680,47 @@ const consoles = {
 // pakElement.style.display = "none"
 // const myObj = {a:1}
 // myObj.a  = 2
+
+function clickMe(fName, lName) {
+    console.log("My name is", fName, lName)
+}
+
+function focusMe() {
+    console.log("Input is in focus")
+}
+function blurMe() {
+    console.log("Input is in blurred state")
+}
+
+const inputBox = document.getElementById("myInput")
+function submit() {
+    console.log(inputBox.value)
+}
+
+
+function restFunction(a, b, ...c) {
+    console.log("Test function", a, b, c)
+}
+
+restFunction("hello", "world", "test", "test 2")
+
+function sum(...a) {
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        // sum += a[i]
+        sum = sum + a[i]
+    }
+    return sum
+}
+
+console.log(sum(5, 15, 30, 15, 4));
+
+
+function setValue(){
+    inputBox.value = "Hello, world"
+}
+
+function expandText(){
+    const para = document.getElementById("text");
+    para.innerText+=" test para"
+}
