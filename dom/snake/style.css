@@ -19,7 +19,8 @@
     background-color: green;
     position: absolute;
     bottom: 0;
-    animation: bottomToTop 3s ease-in-out;
+    animation: bottomToTop 15s ease-in-out;
+    transform: rotate(0deg);
 }
 
 @keyframes bottomToTop {
@@ -29,6 +30,36 @@
 
     to {
         bottom: calc(100% - 90px);
+    }
+}
+
+@keyframes topToBottom {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: calc(100% - 90px);
+    }
+}
+
+@keyframes leftToRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 90px);
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: calc(100% - 90px);
     }
 }
 
