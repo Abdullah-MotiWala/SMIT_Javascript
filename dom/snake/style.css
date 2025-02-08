@@ -1,3 +1,8 @@
+:root {
+    --current-position: 0
+}
+
+
 #game-area {
     height: 95vh;
     border: 1px solid;
@@ -18,14 +23,15 @@
     border: 1px solid green;
     background-color: green;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    left: 120px;
+    /* transform: rotate(90deg); */
     animation: bottomToTop 15s ease-in-out;
-    transform: rotate(0deg);
 }
 
 @keyframes bottomToTop {
     from {
-        bottom: 0;
+        bottom: var(--current-position);
     }
 
     to {
@@ -45,7 +51,7 @@
 
 @keyframes leftToRight {
     from {
-        left: 0;
+        left: var(--current-position);
     }
 
     to {
