@@ -118,10 +118,12 @@ console.clear()
 
 // console.log(student, instructor, "===user");
 
-// function student(name, rollNo) {
-//     const student = { name, rollNo }
-//     return student
-// }
+function student(name, rollNo) {
+    const student = { name, rollNo:123 }
+    return "abc"
+}
+
+const a = student()
 // function greet() {
 //     console.log("Hello" + " " + this.name)
 // }
