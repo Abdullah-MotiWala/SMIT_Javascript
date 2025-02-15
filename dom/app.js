@@ -119,7 +119,7 @@ console.clear()
 // console.log(student, instructor, "===user");
 
 function student(name, rollNo) {
-    const student = { name, rollNo:123 }
+    const student = { name, rollNo: 123 }
     return "abc"
 }
 
@@ -163,3 +163,17 @@ const a = student()
 // }
 // console.log("b")
 throw new Error("This is my error")
+
+// const cardDetail = {
+//     title: "Hi", 
+//     description: "ome quick example text to build on the card title and make up the bulk of the card's content.", 
+//     btnDes: "Go somewhere", 
+//     btnLink: "https://google.com", 
+//     img:"https://img.png"
+// }
+// // CARD CRATE
+// const mainDiv = document.createElement("div")
+// const textNode = document.createTextNode(cardDetail.title)
+// mainDiv.appendChild(textNode)
+
+// document.appendChild(mainDiv)
