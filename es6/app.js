@@ -48,8 +48,99 @@ const students = [
 // console.log(studentIndex)
 
 
-const completeName = name.join(" ")
-console.log(completeName)
-const nameAray = completeName.split(" ")
+// const completeName = name.join(" ")
+// console.log(completeName)
+// const nameAray = completeName.split(" ")
 
-console.log(nameAray)
+// console.log(nameAray)
+
+const one = "1"
+const two = "2"
+console.log(one)
+console.log(two)
+// PROMISE
+// NORMAL FUNCTION
+
+console.clear()
+// setTimeout(() => {
+//     console.log("RUN")
+// },3000)
+function getWater(cb) {
+    let water = undefined
+    setTimeout(() => {
+        water = "adha kilo"
+        console.log(water, "===> water agya")
+        cb()
+    }, 3000)
+}
+function getSugar(cb) {
+    let sugar = undefined
+    setTimeout(() => {
+        sugar = "adha kilo"
+        console.log(sugar, "===> sugar agyi")
+        cb()
+    }, 3000)
+}
+function getDahi(cb) {
+    let dahi = undefined
+    setTimeout(() => {
+        dahi = "adha kilo"
+        console.log(dahi, "==> dahi agyi")
+        cb()
+    }, 3000)
+}
+function lassiBnao() {
+    let lassi = undefined
+    setTimeout(() => {
+        lassi = "1.75l"
+        console.log(lassi, "==> lassi bn gyi")
+    }, 3000)
+}
+
+// getDahi(() => {
+//     getSugar(() => {
+//         getWater(lassiBnao)
+//         alert
+//     })
+// })
+// getDahi(() => {
+//     getSugar(() => {
+//         getWater(lassiBnao)
+//     })
+// })
+
+function getDahi(cb) {
+    let dahi = undefined
+    setTimeout(() => {
+        dahi = "adha kilo"
+        console.log(dahi, "==> dahi agyi")
+        cb()
+    }, 3000)
+}
+let ourPromise = new Promise((res, rej) => {
+    setTimeout(() => {
+        const a = 1;
+        if (a > 10) {
+            res("Promise is resolved")
+        } else {
+            rej("Promise is rejected")
+        }
+    }, 3000)
+})
+// console.log(ourPromise)
+// ourPromise.then((value) => {
+//     console.log(value, ": SUCCESS")
+// })
+// .then((value) => {
+//     console.log(value, ": SUCCESS")
+// })
+// .catch((error) => {
+//     console.log(error, ": FAILED")
+// })
+// console.log("Agay chla gya")
+
+console.log("A")
+setTimeout(() => {
+    console.log("B")
+}, 0)
+console.log("C")
