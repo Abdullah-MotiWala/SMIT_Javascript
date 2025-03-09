@@ -44,3 +44,11 @@ async function submitPost(event) {
     console.log(data, "submit")
 }
 postForm.addEventListener('submit', submitPost)
+
+
+database = {
+    user: [
+        { _id: "kaj", name: "Farooq" }, //document
+        { _id: "rY1", name: "Ahsan" }] //collection,
+
+} //database

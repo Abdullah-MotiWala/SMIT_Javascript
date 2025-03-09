@@ -10,11 +10,20 @@
 <body>
     <button id="click">Click Me</button>
     <button id="click-2">Get Item</button>
+    <form action="">
+        Title: <input type="text" id="title">
+        Description: <input type="text" id="description">
+        Author Name<input type="text" id="author">
+        <button id="save-data" type="button">Save Data</button>
+    </form>
+
     <script src="app.js"></script>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
+        const saveDataBtn = document.getElementById("save-data")
 
 
         const firebaseConfig = {
@@ -29,7 +38,27 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app)
 
-        console.log(db)
+        const saveData = async () => {
+            // const docRef = doc(db, "cities", "LS")
+            // await setDoc(docRef, { name: "Los Angeleee" })
+            // alert("Document added successfully")
+            const title = document.querySelector("#title").value
+            const description = document.querySelector("#description").value
+            const author = document.querySelector("#author").value
+            const currentDate = new Date()
+            const id = Date.now()
+            const payload = {
+                title,
+                description,
+                author,
+                publishedAt: currentDate.toISOString()
+            }
+            const docRef = doc(db, "blogs", id.toString())
+            await setDoc(docRef, payload)
+            alert("Blog added successfully")
+        }
+
+        saveDataBtn.addEventListener("click", saveData)
     </script>
 </body>
 
