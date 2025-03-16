@@ -1,30 +1,53 @@
-const clickButton = document.getElementById("click")
-clickButton.addEventListener("click", () => {
-    alert("clicked")
-    localStorage.setItem("user", { name: "abdullah" })
-})
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
-const click2Button = document.getElementById("click-2")
-click2Button.addEventListener("click", () => {
-    alert("clicked-2")
-    const user = localStorage.getItem("user")
-    console.log(user)
-})
+const blog = document.getElementById("blog")
+const firebaseConfig = {
+    apiKey: "AIzaSyAFQI8gL7G3rC1ZKJCtep1Owd6uwLUiAso",
+    authDomain: "smit-13-test.firebaseapp.com",
+    projectId: "smit-13-test",
+    storageBucket: "smit-13-test.firebasestorage.app",
+    messagingSenderId: "833923891649",
+    appId: "1:833923891649:web:a8717788e7172a18ccaf40"
+};
 
-let numberOfStudents = 200
-// let shouldClassContinue = false
-// if (numberOfStudents > 200) shouldClassContinue = true
 
-// console.log(shouldClassContinue, "===numberOfStudents")
-const workEmail = "abc@smit.com"
-const personalEmail = "abc@gmail.com"
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
+const blogRef = collection(db, "blogs")
 
-// const shouldClassContinue = (numberOfStudents > 200) ? true : false
-// const isAllowed = shouldClassContinue && "Class in runıng"
-// const isRun = shouldClassContinue || "Class in runıng"
-// console.log(isAllowed)
-// const practicalPassed = true
-// const theoriticalMarks = 85
-// const sendEmailTo = workEmail || personalEmail
-// const isPassed = practicalPassed && theoriticalMarks
-// console.log(isPassed)
+const fetchData = async () => {
+    try {
+        const data = await getDocs(blogRef)
+        return data
+    }
+    catch (e) {
+        console.log(e)
+    }
+}
+function createCard(cardDetail, id) {
+    const { imgLink, title, description, author, publishedAt } = cardDetail
+    const descriptionLimit = 50
+    const card = `<div class="card">
+    <img src=${imgLink}/>
+    <h2>${title}</h2>
+    <p>${description.slice(0, descriptionLimit)}...</p>
+    <h5>${author}</h5>
+    <span>${new Date(publishedAt).toLocaleString()}</span>
+    <a href="detail#${id}">Read More</a>
+    </div>`
+    return card
+}
+async function showData() {
+    const data = await fetchData()
+    data.forEach(doc => {
+        const parsedData = doc.data()
+        const card = createCard(parsedData, doc.id)
+        blog.innerHTML += card
+        console.log(card)
+    })
+}
+
+showData()
+
+
